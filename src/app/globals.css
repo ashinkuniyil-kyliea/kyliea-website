@@ -6,3 +6,7 @@
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
 }
+
+body {
+  background-color: #e9625f;
+}

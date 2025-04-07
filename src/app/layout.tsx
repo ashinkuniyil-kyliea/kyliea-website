@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import { Inter } from "next/font/google";
+import { Comfortaa } from "next/font/google";
 import { asText } from "@prismicio/client";
 import { PrismicText } from "@prismicio/react";
 import { PrismicNextLink, PrismicPreview } from "@prismicio/next";
@@ -8,7 +8,7 @@ import { PrismicNextLink, PrismicPreview } from "@prismicio/next";
 import { createClient, repositoryName } from "@/prismicio";
 import { Bounded } from "@/components/Bounded";
 
-const inter = Inter({
+const inter = Comfortaa({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
@@ -20,7 +20,7 @@ export default async function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="overflow-x-hidden antialiased">
-        <Header />
+        {/* <Header /> */}
         {children}
         <PrismicPreview repositoryName={repositoryName} />
       </body>

@@ -21,7 +21,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
   const backgroundImage = slice.primary.backgroundImage;
 
   return (
-    <section className="relative bg-slate-900 text-white">
+    <section className="relative text-white">
       {isFilled.image(backgroundImage) && (
         <PrismicNextImage
           field={backgroundImage}
