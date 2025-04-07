@@ -33,6 +33,13 @@ const Hero: FC<HeroProps> = ({ slice }) => {
       <Bounded yPadding="lg" className="relative">
         <div className="grid justify-items-center gap-8">
           <div className="max-w-2xl text-center">
+            {isFilled.image(slice.primary.image) && (
+              <PrismicNextImage
+                field={slice.primary.image}
+                alt=""
+                className="mb-4"
+              />
+            )}
             <PrismicRichText
               field={slice.primary.text}
               components={components}
